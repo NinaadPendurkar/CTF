@@ -1,0 +1,5 @@
+Challenge 2: WebDecode
+
+Category: Web Exploitation / Encoding
+
+Description:A webpage displays or hides content using encoded strings. The challenge is to decode multiple layers to reveal the flag.

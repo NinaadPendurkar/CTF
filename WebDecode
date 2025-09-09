@@ -3,3 +3,21 @@ Challenge 2: WebDecode
 Category: Web Exploitation / Encoding
 
 Description:A webpage displays or hides content using encoded strings. The challenge is to decode multiple layers to reveal the flag.
+
+SOLUTION APPROACH:
+
+I visited the challenge webpage and started to inspect each and every website linked to it.
+On the about webpage , when I inspected it and was scrolling through the HTML code I saw a very long suspicious value stored in the "notify_true" command.
+Encoded value : cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMDJjZGNiNTl9
+It was encoded in base64 encryption language.
+Using the base64 decode website I decoded the value and it revealed the flag
+Decoded value : picoCTF{web_succ3ssfully_d3c0ded_02cdcb59}
+
+FLAG : 
+picoCTF{web_succ3ssfully_d3c0ded_02cdcb59}
+
+KEY TAKEAWAYS :
+Always recognize common encodings:
+== often → Base64
+%20 or %3D → URL encoding
+ROT13 often used for letters.
